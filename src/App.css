@@ -1,0 +1,19 @@
+/* Global App styles using CSS variables declared in index.css */
+
+.app-root {
+	position: relative;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.bg-animated-shapes div { opacity: 0.06; }
+
+.content-container {
+	position: relative;
+	z-index: 10;
+	padding-top: 5rem;
+}
+
+h1,h2,h3,h4 { color: var(--text-primary); }
+
+p { color: var(--text-muted); }

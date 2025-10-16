@@ -1,1 +1,58 @@
 @import "tailwindcss";
+
+:root {
+	/* Primary palette (minimal, eye-catching) */
+	--bg-900: #071020; /* deep navy */
+	--bg-800: #0d1530; /* slightly lighter */
+	--surface: #0f1a2b; /* cards / surfaces */
+
+	--text-primary: #eaf2ff; /* soft off-white */
+	--text-muted: #9aa6bf; /* muted text */
+
+	--accent: 96,165,250; /* rgb for soft blue (60a5fa) */
+	--accent-2: 124,58,237; /* rgb for violet (7c3aed) */
+
+	--glass: rgba(255,255,255,0.04);
+}
+
+/* Base element reset and global styles */
+* { box-sizing: border-box; }
+html,body,#root { height: 100%; }
+body {
+	margin: 0;
+	background: var(--bg-900);
+	color: var(--text-primary);
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a { color: rgb(var(--accent)); text-decoration: none; }
+
+/* Utility classes that use the palette so we can manage theme centrally */
+.bg-portfolio {
+	background: linear-gradient(135deg, var(--bg-900) 0%, var(--bg-800) 50%, var(--surface) 100%);
+}
+
+.portfolio-overlay {
+	background: linear-gradient(180deg, rgba(21,27,53,0.18), transparent 40%, rgba(26,31,58,0.12));
+}
+
+.btn-accent {
+	background: linear-gradient(90deg, rgba(var(--accent),1), rgba(var(--accent-2),1));
+	color: white;
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+}
+
+.glass {
+	background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+	backdrop-filter: blur(6px);
+	border-radius: 8px;
+}
+
+.glow-accent { background-color: rgba(var(--accent), 0.08); }
+.glow-accent-2 { background-color: rgba(var(--accent-2), 0.06); }
+

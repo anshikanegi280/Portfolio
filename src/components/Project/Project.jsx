@@ -111,7 +111,7 @@ function Project() {
           <div
             key={project.id}
             onClick={() => handleOpenModal(project)}
-            className="border border-white bg-gray-900 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden cursor-pointer hover:shadow-purple-500/50 hover:-translate-y-2 transition-transform duration-300"
+            className="border border-[rgba(255,255,255,0.04)] bg-gray-900 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden cursor-pointer hover:shadow-[rgba(124,58,237,0.2)] hover:-translate-y-2 transition-transform duration-300"
           >
             <div className="p-4">
               <img
@@ -135,7 +135,7 @@ function Project() {
                 {project.tags.map((tag, index) => (
                   <span
                     key={index}
-                    className="inline-block bg-[#251f38] text-xs font-semibold text-purple-500 rounded-full px-2 py-1 mr-2 mb-2"
+                    className="inline-block bg-[rgba(255,255,255,0.02)] text-xs font-semibold text-[rgb(var(--accent-2))] rounded-full px-2 py-1 mr-2 mb-2"
                   >
                     {tag}
                   </span>
