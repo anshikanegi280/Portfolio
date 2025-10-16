@@ -2,7 +2,7 @@ import React from 'react'
 import cryptocurrencyLogo from '../../assets/projectlogo/cryptocurrency.png';
 import contactManagementLogo from '../../assets/projectlogo/contactManagement.png';
 import movierecLogo from '../../assets/projectlogo/movie_rec.png';
-import BlockchainLogo from '../../assets/projectlogo/Blockchain.png';
+import BlockchainLogo from '../../assets/projectlogo/blockchain.png';
 import pdfMergerLogo from '../../assets/projectlogo/pdfMerger.png';
 import tosolistLogo from '../../assets/projectlogo/tosolist.png';
 import taskmanagementLogo from '../../assets/projectlogo/taskmanagement.png';
@@ -148,5 +148,6 @@ function Project() {
     </section>
   )
 }
+
 
 export default Project
